@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konferans middag</title>
+</head>
+
+<body>
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=marcus-johnsson@gmail.se" method="post">
+        <label for="name">Ditt namn</label>
+        <input type="text" id="name" name="name"> <br>
+
+        <label for="expectations">Dina förväntningar på konferensen?</label><br>
+        <textarea id="expectations" name="expectations" rows="5" cols="80"></textarea> <br>
+
+        <p>Välj maträtt</p>
+        <input type="radio" name="food" id="meat" value="meat">
+        <label>Kött</label><br>
+        <input type="radio" name="food" id="vegarisk" value="vegarisk">
+        <label>Vegarisk</label><br>
+        <input type="radio" name="food" id="fisk" value="fisk">
+        <label>Fisk</label><br>
+        <input type="radio" name="food" id="alg" value="alg">
+        <label>Älg</label><br>
+        <input type="radio" name="food" id="kanin" value="kanin">
+        <label>Kanin</label>
+        <input type="checkbox" name="newsletter" id="newletter" value="ja">
+        <label type="hidden" name="newletter" value="nej"></label>
+        <label for="newletter">Jag vill ha nyhetsbrev?</label><br>
+
+        <input type="date" name="registreringsdag" id="dag"><br>
+        <input type="number" name="antal" id="antal" min="1" max="10" step="1"><br>
+        <input type="color" name="color" id="color"><br>
+        <input type="email" name="email" id="email" placeholder="Ange din e-post">
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br>
+        <input type="submit" value="Register dig">
+    </form>
+</body>
+
+</html>
